@@ -1854,7 +1854,7 @@ cudaDeviceGetAttributeInternal(int *value, enum cudaDeviceAttr attr, int device,
       default:
         printf("ERROR: Attribute number %d unimplemented \n", attr);
         // TODO: test
-        *value = 0
+        *value = 0;
 //        abort();
     }
     return g_last_cudaError = cudaSuccess;
